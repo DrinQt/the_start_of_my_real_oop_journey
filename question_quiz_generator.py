@@ -7,7 +7,7 @@ class Question:
     def ask(self):
         print(self.question_text)
         for i, option in enumerate(self.options):
-            print(f"{chr(97 + i)}. {option}")
+            print(f"{chr(97 + i)}. {option}")  # Display options as a, b, c, d
         user_answer = input("Your answer (a/b/c/d): ").strip().lower()
         if user_answer == self.correct_answer:
             print("Galing ah! You got it right!")
